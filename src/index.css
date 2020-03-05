@@ -1,23 +1,96 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.App {
-  text-align: center;
+  font: 30px "Century Gothic", sans-serif;
+  margin: 50px;
+  background: rgb(250, 188, 166);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.square {
+  background: rgb(255, 167, 136);
+  border: 4px solid rgb(255, 121, 72);
+  float: left;
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 200px;
+  height: 200px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 200px;
 }
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+ 
+.hover-button .hover-button--on,
+.hover-button:hover .hover-button--off {
+display: none;
+}
+.hover-button .hover-button--on2,
+.hover-button:hover .hover-button--off {
+display: none;
+}
+
+.hover-button:hover .hover-button--on {
+display: inline;
+color:rgb(255, 255, 255,.5);
+}
+.hover-button:hover .hover-button--on2 {
+display: inline;
+color:rgba(0, 0, 0, 0.4);
+}
+
+.red{
+color:white;
+}
+.purple{
+color:black;
+}
+.button{
+margin: 10px;
+width:250px;
+height:100px;
+font-size: 50px;
+font-weight: bold;
+background: rgb(255, 167, 136);
+border: 4px solid rgb(255, 121, 72);}
+.button:focus{
+outline: none;
+}
+.clearButton{
+margin: 10px;
+width:250px;
+height:100px;
+background: rgba(1, 1, 1, 0)!important;
+border: 4px solid rgb(1, 1, 1,0)!important;
+}
+.clearButton:focus{
+outline: none;
+}
+
+.text{
+  position: fixed;
+  font-size: 300px;
+  font-weight: bold;
+  color: rgb(255, 73, 103);
+  top: 40vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(1, 1, 1,0) !important;
+}
+/* span{
+  background-color: rgb(1, 1, 1,0) !important;
+} */
