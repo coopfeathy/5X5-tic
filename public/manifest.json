@@ -1,6 +1,6 @@
 {
-  "short_name": "ReactTemp",
-  "name": "Create React App Template",
+  "short_name": "5X5 Tic",
+  "name": "5X5 Tic-Tac-Toe",
   "icons": [
     {
       "src": "logo.ico",
