@@ -39,7 +39,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div className="r-back">
+      <div className="parent r-back">
         <div className="board-row r-back">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -182,6 +182,12 @@ class Game extends React.Component {
  
     return (
       <div className="game r-back">
+        <div className="game-info r-back">
+          <div className="status">{status}</div>
+          <div>{back}</div>
+          <div>{forward}</div>
+          <div>{restart}</div>
+        </div>
         <div className="game-board r-back">
           <Board
             squares={current.squares}
@@ -191,12 +197,7 @@ class Game extends React.Component {
             backClick={backClick}
           />
         </div>
-        <div className="game-info r-back">
-          <div>{status}</div>
-          <div>{back}</div>
-          <div>{forward}</div>
-          <div>{restart}</div>
-        </div>
+        <br/><br/>
       </div>
     );
   }
