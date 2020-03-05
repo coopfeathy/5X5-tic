@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import "./index.css"
 
 
@@ -244,12 +244,6 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
-
-
-
-
-
 
 var go = false;
 
